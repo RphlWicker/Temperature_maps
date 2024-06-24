@@ -113,7 +113,7 @@ for i, (crn, sn, hid, name, ts, chi200_dl, chi200_h, chi500_dl, chi500_h) in enu
         nH_g = (1 - metHe_g - metM_g)*mas_g*1.0e10 / 0.6777  #proton number 
         ne_g = nH_g * eleab_g #electron number: proton number multiply relative value       
 
-    # %%
+    # %%(Figure Updated_samples.jpg)(Figure Updated_samples.jpg)
     #projection along 29 different los
     rotations = np.loadtxt('/home2/ferragamo/NIKA2_300_TS/29_rotations.txt')
     for irot, RA in enumerate(rotations):

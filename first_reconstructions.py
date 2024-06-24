@@ -85,7 +85,6 @@ def mock_observed_temperature_map(sz_snap, sz_map, xray_clust, xray_map):
     plt.show()
     return temperature_map
 
-
 def temperature_simple_reconstruction(cluster, snap, proj, plot=False, convolved=False):
     if not convolved:
         mass_map = fits.getdata(f'{thermo_quantity_maps}Xray_theoretical_maps_CL{cluster}_snap_{snap}_proj_{proj}.fits',
@@ -574,3 +573,12 @@ def check_weight_maps(cluster, snap, proj):
 
     plt.savefig(f'Weight_maps_CL{cluster}_snap_{snap}_proj_{proj}.jpg')
     plt.show()
+
+
+def test_func():
+    print('Are you really fed up with this sh*t ?')
+    reply = input()
+    if reply in ['y', 'yes', 'YES']:
+        return 'Well sucks to be you man'
+    else :
+        return 'Then why do you annoy me ?'        
